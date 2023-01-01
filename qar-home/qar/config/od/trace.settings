@@ -1,0 +1,3 @@
+[TRACE]
+TRACE_FILE=trace.log
+TRACE_LEVELS=ALL=15

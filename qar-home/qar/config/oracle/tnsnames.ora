@@ -1,0 +1,9 @@
+__TNS.ORA#INSTANCE__ =
+      (DESCRIPTION =
+        (ADDRESS_LIST =
+          (ADDRESS = (PROTOCOL = TCP)(HOST = __TNS.ORA#HOST__)(PORT = __TNS.ORA#PORT__))
+        )
+        (CONNECT_DATA =
+          (SERVICE_NAME = __TNS.ORA#SERVICE_NAME__)
+        )
+      )

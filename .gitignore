@@ -1,0 +1,9 @@
+!build/
+build/ondemand/od
+build/ondemand/qar-home.tar
+build/ondemand-fts/od
+build/ondemand-fts/qar-home.tar
+build/ondemand-restapi/od
+build/ondemand-restapi/qar-home.tar
+build/oracledb/dockerfiles/21.3.0/LINUX.X64_213000_db_home.zip
+http-server/files/

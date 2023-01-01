@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 10.5.0.5 -->
+<onDemand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+   <systemParameters updateDate="08/18/22 13:24:21" passwordAge="90" passwordLen="8" inactivityTO="60" uidCaseSensitive="false" pwdCaseSensitive="false" enableLDAP="false" allowPublic="true" allowPrivateUser="true" allowPrivateGroup="true" allowTextAnnot="true" allowGraphicAnnot="true" defaultAnnot="Public" enableComments="false" requireComments="false" disableOrLockUser="Never" userLoginInactivity="Never Disable" previousPasswords="Never Check" lifeOfAnnotations="Never Expire" lockoutMinutes="0" notifyPasswordDays="Never Notify" serverTraceOn="false" serverTraceString="ALL=3" logLogin="true" logLogoff="true" logFailedLogin="true" logAGMsgs="true" logUELogin="false" logUELogoff="false" logUEFailedLogin="false" logUEAGMsgs="false" />
+   <user name="ADMIN" description="OnDemand Administrator" updateDate="08/18/22 15:41:03" updateUserid="ADMIN" uid="1" failedLogins="0" lastLoginDate="11/28/22 13:58:16" lastPWChangeDate="08/18/22 13:56:36" passwordExp="Never Expires" disableUser="false" printer="*NONE" printerBanner="No" timeOut="No Limit" userType="System Admin" createUsersAuth="false" createGroupsAuth="false" createAppGroupsAuth="false" createFoldersAuth="false" createCabinetsAuth="false" createHoldsAuth="false" odfAdminAuth="false" >
+   </user>
+   <storageSet name="Cache Only - Library Server" description="OnDemand Library Server Cache Only" updateDate="08/18/22 13:24:21" sid="1" storageType="Fixed" >
+      <node name="Cache Only - Library Server" description="OnDemand Library Server Cache Only" server="*ONDEMAND" loadData="Yes" accessMethod="Cache" />
+   </storageSet>
+   <applicationGroup name="Extracto" updateDate="11/21/22 06:29:37" updateUserid="ADMIN" enableLoadDate="false" enableQueryDate="false" enableRetrieveDate="false" agid="5020" ag_identifier="DAA" storageSet="Cache Only - Library Server" expirationType="Load" maxDBRows="10000000" loadsPerTable="Multiple" dbCompress="false" annot="false" objectSize="10000" migrateIndexKeep="0" cacheData="true" docDataLen="90" resDataLen="Always" restoreResources="true" expirationDate="90" migrateCache="Never" migrateIndex="Never" parameterMarkers="true" updateExistingTables="false" enhancedRetManagement="false" impliedHold="false" CFSOD="false" FTI="false" encryption="false" logRetrieval="true" logBulkRetrieval="true" logServerPrinting="true" logIndexAdd="true" logIndexUpdate="true" logIndexDelete="true" logObjectStore="true" logObjectRetrieve="true" logAnnotAdd="true" logAnnotUpdate="true" logAnnotDelete="true" logDBQueriesBefore="false" logDBQueriesAfter="false" >
+      <field name="AGEWCAB2" type="Index" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Fixed" stringLength="4" />
+      <field name="CTAWCAB2" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Fixed" stringLength="8" />
+      <field name="DACWCAB2" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Fixed" stringLength="1" />
+      <field name="NOMWCAB2" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Fixed" stringLength="37" />
+      <field name="MESWCAB2" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Fixed" stringLength="7" />
+      <field name="SECWCAB2" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Fixed" stringLength="2" />
+      <field name="ANOWCAB2" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Fixed" stringLength="2" />
+      <field name="PAGWCAB2" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Fixed" stringLength="9" />
+      <permission group="*PUBLIC" adminAuthority="false" lvAuthority="false" accessAuthority="false" docViewPerm="false" docAddPerm="false" docUpdatePerm="false" docDeletePerm="false" docPrintPerm="false" docCopyPerm="false" docHoldPerm="false" docCFSODPerm="false" docFTIPerm="false" annotViewPerm="false" annotAddPerm="false" annotDeletePerm="false" annotUpdatePerm="false" annotCopyPerm="false" />
+   </applicationGroup>
+   <applicationGroup name="QARdemo" updateDate="08/22/22 12:37:03" updateUserid="ADMIN" enableLoadDate="false" enableQueryDate="false" enableRetrieveDate="false" agid="5012" ag_identifier="BAA" storageSet="Cache Only - Library Server" expirationType="Load" maxDBRows="10000000" loadsPerTable="Multiple" dbCompress="false" annot="false" objectSize="10000" migrateIndexKeep="0" cacheData="true" docDataLen="90" resDataLen="Always" restoreResources="true" expirationDate="90" migrateCache="Never" migrateIndex="Never" parameterMarkers="true" updateExistingTables="false" enhancedRetManagement="false" impliedHold="false" CFSOD="false" FTI="false" encryption="false" logRetrieval="true" logBulkRetrieval="true" logServerPrinting="true" logIndexAdd="true" logIndexUpdate="true" logIndexDelete="true" logObjectStore="true" logObjectRetrieve="true" logAnnotAdd="true" logAnnotUpdate="true" logAnnotDelete="true" logDBQueriesBefore="false" logDBQueriesAfter="false" >
+      <field name="docUUID" type="Index" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="50" />
+      <field name="custName" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="50" />
+      <field name="comDate" type="Filter" dataType="Date (native)" segment="true" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" />
+      <field name="comGroup" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="50" />
+      <field name="comName" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="50" />
+      <field name="customStr" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="100" />
+      <field name="customStr2" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="100" />
+      <field name="customDec" type="Filter" dataType="Decimal" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" />
+      <field name="docType" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="true" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Variable" stringLength="4" >
+         <mapping dbValue="AFP" displayedValue="AFP" />
+         <mapping dbValue="HTML" displayedValue="HTML" />
+         <mapping dbValue="PDF" displayedValue="PDF" />
+      </field>
+      <permission group="*PUBLIC" adminAuthority="false" lvAuthority="false" accessAuthority="false" docViewPerm="false" docAddPerm="false" docUpdatePerm="false" docDeletePerm="false" docPrintPerm="false" docCopyPerm="false" docHoldPerm="false" docCFSODPerm="false" docFTIPerm="false" annotViewPerm="false" annotAddPerm="false" annotDeletePerm="false" annotUpdatePerm="false" annotCopyPerm="false" />
+   </applicationGroup>
+   <applicationGroup name="QARdemoFTI" description="Full Text Indexing" updateDate="11/28/22 13:56:19" updateUserid="ADMIN" enableLoadDate="false" enableQueryDate="false" enableRetrieveDate="false" agid="5024" ag_identifier="GAA" storageSet="Cache Only - Library Server" expirationType="Load" maxDBRows="10000000" loadsPerTable="Multiple" dbCompress="false" annot="false" objectSize="10000" migrateIndexKeep="0" cacheData="true" docDataLen="90" resDataLen="Always" restoreResources="true" expirationDate="90" migrateCache="Never" migrateIndex="Never" parameterMarkers="true" updateExistingTables="false" enhancedRetManagement="false" impliedHold="false" CFSOD="false" FTI="true" autoFTI="true" serverFTI="SANDBOX,8191" encryption="false" logRetrieval="true" logBulkRetrieval="true" logServerPrinting="true" logIndexAdd="true" logIndexUpdate="true" logIndexDelete="true" logObjectStore="true" logObjectRetrieve="true" logAnnotAdd="true" logAnnotUpdate="true" logAnnotDelete="true" logDBQueriesBefore="false" logDBQueriesAfter="false" >
+      <field name="docUUID" type="Index" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="50" />
+      <field name="custName" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="50" />
+      <field name="comDate" type="Filter" dataType="Date (native)" segment="true" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" />
+      <field name="comGroup" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="50" />
+      <field name="comName" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="50" />
+      <field name="customStr" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="100" />
+      <field name="customStr2" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" stringCase="Upper" stringType="Variable" stringLength="100" />
+      <field name="customDec" type="Filter" dataType="Decimal" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="true" />
+      <field name="docType" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="true" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Variable" stringLength="4" >
+         <mapping dbValue="AFP" displayedValue="AFP" />
+         <mapping dbValue="HTML" displayedValue="HTML" />
+         <mapping dbValue="PDF" displayedValue="PDF" />
+      </field>
+      <field name="fts" type="Filter" dataType="Small Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="true" updateable="false" />
+      <permission group="*PUBLIC" adminAuthority="false" lvAuthority="false" accessAuthority="false" docViewPerm="false" docAddPerm="false" docUpdatePerm="false" docDeletePerm="false" docPrintPerm="false" docCopyPerm="false" docHoldPerm="false" docCFSODPerm="false" docFTIPerm="false" annotViewPerm="false" annotAddPerm="false" annotDeletePerm="false" annotUpdatePerm="false" annotCopyPerm="false" />
+   </applicationGroup>
+   <applicationGroup name="System Load" description="OnDemand System Load Facility" updateDate="08/18/22 13:24:24" enableLoadDate="false" enableQueryDate="false" enableRetrieveDate="false" agid="5007" ag_identifier="SA" storageSet="Cache Only - Library Server" expirationType="Segment" maxDBRows="10000000" loadsPerTable="Multiple" dbCompress="false" annot="false" objectSize="10000" migrateIndexKeep="0" cacheData="true" docDataLen="99999" resDataLen="Always" restoreResources="true" expirationDate="99999" migrateCache="Never" migrateIndex="Never" parameterMarkers="true" updateExistingTables="false" enhancedRetManagement="false" impliedHold="false" CFSOD="false" FTI="false" encryption="false" logRetrieval="false" logBulkRetrieval="false" logServerPrinting="false" logIndexAdd="false" logIndexUpdate="false" logIndexDelete="false" logObjectStore="false" logObjectRetrieve="false" logAnnotAdd="false" logAnnotUpdate="false" logAnnotDelete="false" logDBQueriesBefore="false" logDBQueriesAfter="false" createAndUseNewDates="true" >
+      <field name="load_time" type="Index" dataType="Date/Time (TZ)" segment="true" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="true" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="applgrp_name" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Mixed" stringType="Variable" stringLength="60" />
+      <field name="appl_name" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Mixed" stringType="Variable" stringLength="60" />
+      <field name="load_id" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Variable" stringLength="100" />
+      <field name="total_elapsed" type="Filter" dataType="Decimal" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="index_elapsed" type="Filter" dataType="Decimal" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="total_docs" type="Filter" dataType="Big Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="total_pages" type="Filter" dataType="Big Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="doc_comp_type" type="Filter" dataType="Small Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" >
+         <mapping dbValue="68" displayedValue="Disable" />
+         <mapping dbValue="78" displayedValue="None" />
+         <mapping dbValue="76" displayedValue="LZW12" />
+         <mapping dbValue="51" displayedValue="LZW13" />
+         <mapping dbValue="52" displayedValue="LZW14" />
+         <mapping dbValue="53" displayedValue="LZW15" />
+         <mapping dbValue="90" displayedValue="LZW16" />
+         <mapping dbValue="79" displayedValue="OD77" />
+         <mapping dbValue="70" displayedValue="OD77Lite" />
+         <mapping dbValue="72" displayedValue="OD77HW" />
+         <mapping dbValue="88" displayedValue="OD77LiteHW" />
+         <mapping dbValue="0" displayedValue="N/A" />
+      </field>
+      <field name="doc_input_size" type="Filter" dataType="Big Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="doc_output_size" type="Filter" dataType="Big Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="res_type" type="Filter" dataType="Small Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" >
+         <mapping dbValue="0" displayedValue="Unknown" />
+         <mapping dbValue="1" displayedValue="N/A" />
+         <mapping dbValue="2" displayedValue="New" />
+         <mapping dbValue="3" displayedValue="Existing" />
+      </field>
+      <field name="res_rid" type="Filter" dataType="Integer" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="res_comp_type" type="Filter" dataType="Small Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" >
+         <mapping dbValue="68" displayedValue="Disable" />
+         <mapping dbValue="78" displayedValue="None" />
+         <mapping dbValue="76" displayedValue="LZW12" />
+         <mapping dbValue="51" displayedValue="LZW13" />
+         <mapping dbValue="52" displayedValue="LZW14" />
+         <mapping dbValue="53" displayedValue="LZW15" />
+         <mapping dbValue="90" displayedValue="LZW16" />
+         <mapping dbValue="79" displayedValue="OD77" />
+         <mapping dbValue="70" displayedValue="OD77Lite" />
+         <mapping dbValue="72" displayedValue="OD77HW" />
+         <mapping dbValue="88" displayedValue="OD77LiteHW" />
+         <mapping dbValue="0" displayedValue="N/A" />
+      </field>
+      <field name="res_input_size" type="Filter" dataType="Big Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="res_output_size" type="Filter" dataType="Big Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="load_agid" type="Filter" dataType="Integer" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="load_aid" type="Filter" dataType="Integer" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="load_name" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Variable" stringLength="11" />
+      <field name="load_pri_nid" type="Filter" dataType="Integer" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="load_sec_nid" type="Filter" dataType="Integer" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="load_start" type="Filter" dataType="Big Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="load_stop" type="Filter" dataType="Big Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="doc_bgn_date" type="Filter" dataType="Date" segment="false" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="doc_end_date" type="Filter" dataType="Date" segment="false" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="index_type" type="Filter" dataType="Small Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" >
+         <mapping dbValue="0" displayedValue="Unknown" />
+         <mapping dbValue="65" displayedValue="ACIF" />
+         <mapping dbValue="51" displayedValue="OS390" />
+         <mapping dbValue="52" displayedValue="OS400" />
+         <mapping dbValue="71" displayedValue="Generic" />
+         <mapping dbValue="78" displayedValue="None" />
+         <mapping dbValue="80" displayedValue="PDF" />
+         <mapping dbValue="88" displayedValue="Xenos" />
+         <mapping dbValue="76" displayedValue="XML" />
+         <mapping dbValue="73" displayedValue="User provided" />
+      </field>
+      <field name="appl_id" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="true" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Mixed" stringType="Fixed" stringLength="1" >
+         <mapping dbValue="0" displayedValue="No" />
+         <mapping dbValue="1" displayedValue="Yes" />
+      </field>
+      <field name="lockdown" type="Filter" dataType="Small Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="true" CFSOD="false" FTI="false" updateable="false" />
+      <field name="cfsod" type="Filter" dataType="Small Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="input_filename" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Mixed" stringType="Variable" stringLength="1024" />
+      <field name="load_start_dt" type="Filter" dataType="Date/Time (native)" segment="false" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="load_stop_dt" type="Filter" dataType="Date/Time (native)" segment="false" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="input_file_size" type="Filter" dataType="Big Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <permission group="*PUBLIC" adminAuthority="false" lvAuthority="false" accessAuthority="false" docViewPerm="false" docAddPerm="false" docUpdatePerm="false" docDeletePerm="false" docPrintPerm="false" docCopyPerm="false" docHoldPerm="false" docCFSODPerm="false" docFTIPerm="false" annotViewPerm="false" annotAddPerm="false" annotDeletePerm="false" annotUpdatePerm="false" annotCopyPerm="false" />
+      <index name="1" >
+         <field name="load_agid" order="Ascending" />
+         <field name="load_name" order="Ascending" />
+      </index>
+   </applicationGroup>
+   <applicationGroup name="System Log" description="OnDemand System Log Facility" updateDate="08/18/22 13:24:23" enableLoadDate="false" enableQueryDate="false" enableRetrieveDate="false" agid="5001" ag_identifier="SL" storageSet="Cache Only - Library Server" expirationType="Segment" maxDBRows="10000000" loadsPerTable="Multiple" dbCompress="false" annot="false" objectSize="10000" migrateIndexKeep="0" cacheData="true" docDataLen="99999" resDataLen="Always" restoreResources="true" expirationDate="99999" migrateCache="Never" migrateIndex="Never" parameterMarkers="true" updateExistingTables="false" enhancedRetManagement="false" impliedHold="false" CFSOD="false" FTI="false" encryption="false" logRetrieval="false" logBulkRetrieval="false" logServerPrinting="false" logIndexAdd="false" logIndexUpdate="false" logIndexDelete="false" logObjectStore="false" logObjectRetrieve="false" logAnnotAdd="false" logAnnotUpdate="false" logAnnotDelete="false" logDBQueriesBefore="false" logDBQueriesAfter="false" createAndUseNewDates="true" >
+      <field name="time_stamp" type="Index" dataType="Date/Time (TZ)" segment="true" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="true" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="userid" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Variable" stringLength="128" />
+      <field name="severity" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Upper" stringType="Fixed" stringLength="1" >
+         <mapping dbValue="1" displayedValue="Alert" />
+         <mapping dbValue="2" displayedValue="Error" />
+         <mapping dbValue="3" displayedValue="Warning" />
+         <mapping dbValue="4" displayedValue="Info" />
+         <mapping dbValue="5" displayedValue="Debug" />
+      </field>
+      <field name="msg_num" type="Index" dataType="Small Int" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="msg_text" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Mixed" stringType="Variable" stringLength="2000" />
+      <field name="appl_id" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="true" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Mixed" stringType="Fixed" stringLength="1" >
+         <mapping dbValue="A" displayedValue="N/A" />
+         <mapping dbValue="N" displayedValue="No" />
+         <mapping dbValue="T" displayedValue="Yes" />
+      </field>
+      <field name="log_id" type="Filter" dataType="Integer" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" />
+      <field name="account" type="Filter" dataType="String" uniqueID="false" hashSHA256="false" encryption="false" expireDate="false" log="false" userExit="false" partition="false" appIDField="false" reference="false" pageCount="false" documentSize="false" lockdown="false" CFSOD="false" FTI="false" updateable="false" stringCase="Mixed" stringType="Variable" stringLength="60" />
+      <permission group="*PUBLIC" adminAuthority="false" lvAuthority="false" accessAuthority="false" docViewPerm="false" docAddPerm="false" docUpdatePerm="false" docDeletePerm="false" docPrintPerm="false" docCopyPerm="false" docHoldPerm="false" docCFSODPerm="false" docFTIPerm="false" annotViewPerm="false" annotAddPerm="false" annotDeletePerm="false" annotUpdatePerm="false" annotCopyPerm="false" />
+   </applicationGroup>
+   <application name="Extracto" updateDate="11/21/22 06:35:28" updateUserid="ADMIN" aid="5021" appGroup="Extracto" dataType="Line" indexer="ACIF" dataCompression="OD77" largeObject="false" size="100" pageIdentifiers="false" printAmount="All Pages" defaultPrinter="*NONE" expirationDate="Use AppGroup Value" usePreview="false" >
+      <lineData codePage="850" prMode="None" recFM="Stream" delimiter="0D0A" trc="No" CCType="ANSI" >
+         <lvHeader pageHdrRows="0" fieldHdrRows="0" validationRow="0" validationCol="0" />
+      </lineData>
+      <preprocessParm dbName="AGEWCAB2" loadIDName="AGEWCAB2" />
+      <preprocessParm dbName="CTAWCAB2" loadIDName="CTAWCAB2" />
+      <preprocessParm dbName="DACWCAB2" loadIDName="DACWCAB2" />
+      <preprocessParm dbName="NOMWCAB2" loadIDName="NOMWCAB2" />
+      <preprocessParm dbName="MESWCAB2" loadIDName="MESWCAB2" />
+      <preprocessParm dbName="SECWCAB2" loadIDName="SECWCAB2" />
+      <preprocessParm dbName="ANOWCAB2" loadIDName="ANOWCAB2" />
+      <preprocessParm dbName="PAGWCAB2" loadIDName="PAGWCAB2" />
+      <indexParm >CC=YES
+CCTYPE=Z
+CONVERT=NO
+CPGID=850
+MCF2REF=CPCS
+TRC=NO
+FILEFORMAT=STREAM,(NEWLINE=X'0D0A')
+TRIGGER1=*,79,X'303030303030303031',(TYPE=GROUP)           /* 000000001 */
+FIELD1=0,2,4,(TRIGGER=1,BASE=0)
+FIELD2=0,8,8,(TRIGGER=1,BASE=0)
+FIELD3=0,17,1,(TRIGGER=1,BASE=0)
+FIELD4=0,24,37,(TRIGGER=1,BASE=0)
+FIELD5=0,61,7,(TRIGGER=1,BASE=0)
+FIELD6=0,69,2,(TRIGGER=1,BASE=0)
+FIELD7=0,71,2,(TRIGGER=1,BASE=0)
+FIELD8=0,79,9,(TRIGGER=1,BASE=0)
+INDEX1=X'4147455743414232',FIELD1,(TYPE=GROUP,BREAK=YES)   /* AGEWCAB2  */
+INDEX2=X'4354415743414232',FIELD2,(TYPE=GROUP,BREAK=YES)   /* CTAWCAB2  */
+INDEX3=X'4441435743414232',FIELD3,(TYPE=GROUP,BREAK=YES)   /* DACWCAB2  */
+INDEX4=X'4E4F4D5743414232',FIELD4,(TYPE=GROUP,BREAK=YES)   /* NOMWCAB2  */
+INDEX5=X'4D45535743414232',FIELD5,(TYPE=GROUP,BREAK=YES)   /* MESWCAB2  */
+INDEX6=X'5345435743414232',FIELD6,(TYPE=GROUP,BREAK=YES)   /* SECWCAB2  */
+INDEX7=X'414E4F5743414232',FIELD7,(TYPE=GROUP,BREAK=YES)   /* ANOWCAB2  */
+INDEX8=X'5041475743414232',FIELD8,(TYPE=GROUP,BREAK=YES)   /* PAGWCAB2  */
+DCFPAGENAMES=NO
+UNIQUEBNGS=YES
+IMAGEOUT=ASIS
+INDEXOBJ=GROUP
+INDEXSTARTBY=10
+INSERTIMM=NO
+RESTYPE=NONE
+</indexParm>
+   </application>
+   <application name="QARdemoAFP" updateDate="08/22/22 12:29:00" updateUserid="ADMIN" aid="5015" appGroup="QARdemo" identifier="AFP" dataType="AFP" indexer="PDF" dataCompression="OD77" resCompression="OD77" largeObject="false" size="100" pageIdentifiers="false" printAmount="All Pages" defaultPrinter="*NONE" expirationDate="Use AppGroup Value" usePreview="false" resourceComparison="50" >
+      <afpData orientation="0" paperSize="Autosize" >
+      </afpData>
+      <preprocessParm dbName="docUUID" loadIDName="docUUID" />
+      <preprocessParm dbName="custName" loadIDName="custName" />
+      <preprocessParm dbName="comDate" loadIDName="comDate" embedded=" " leading=" " trailing=" " format="%Y-%m-%d" />
+      <preprocessParm dbName="comGroup" loadIDName="comGroup" />
+      <preprocessParm dbName="comName" loadIDName="comName" />
+      <preprocessParm dbName="customStr" loadIDName="customStr" />
+      <preprocessParm dbName="customStr2" loadIDName="customStr2" />
+      <preprocessParm dbName="customDec" loadIDName="customDec" embedded=",." leading=" " trailing=" " divideBy="100" />
+      <indexParm >CC=YES
+CCTYPE=Z
+CONVERT=YES
+CPGID=500
+MCF2REF=CPCS
+TRC=NO
+FILEFORMAT=STREAM
+DCFPAGENAMES=NO
+UNIQUEBNGS=YES
+IMAGEOUT=ASIS
+INDEXOBJ=GROUP
+INDEXSTARTBY=1
+INSERTIMM=NO
+FORMDEF=Dummy
+EXTENSIONS=RESORDER
+RESTYPE=FONT,FDEF,PSEG,OVLY</indexParm>
+   </application>
+   <application name="QARdemoHTML" updateDate="08/22/22 12:30:02" updateUserid="ADMIN" aid="5016" appGroup="QARdemo" identifier="HTML" dataType="User Defined" indexer="Generic" dataCompression="Disable" size="100" pageIdentifiers="false" printAmount="All Pages" defaultPrinter="*NONE" expirationDate="Use AppGroup Value" usePreview="false" >
+      <udData fileExt="HTM" />
+      <preprocessParm dbName="docUUID" loadIDName="docUUID" />
+      <preprocessParm dbName="custName" loadIDName="custName" />
+      <preprocessParm dbName="comDate" loadIDName="comDate" embedded=" " leading=" " trailing=" " format="%Y-%m-%d" />
+      <preprocessParm dbName="comGroup" loadIDName="comGroup" />
+      <preprocessParm dbName="comName" loadIDName="comName" />
+      <preprocessParm dbName="customStr" loadIDName="customStr" />
+      <preprocessParm dbName="customStr2" loadIDName="customStr2" />
+      <preprocessParm dbName="customDec" loadIDName="customDec" embedded=",." leading=" " trailing=" " divideBy="100" />
+      <indexParm ></indexParm>
+   </application>
+   <application name="QARdemoPDF" updateDate="08/22/22 12:27:49" updateUserid="ADMIN" aid="5013" appGroup="QARdemo" identifier="PDF" dataType="PDF" indexer="PDF" dataCompression="OD77" size="100" pageIdentifiers="false" printAmount="All Pages" defaultPrinter="*NONE" expirationDate="Use AppGroup Value" usePreview="false" resourceComparison="50" >
+      <pdfData orientation="0" >
+      </pdfData>
+      <preprocessParm dbName="docUUID" loadIDName="docUUID" />
+      <preprocessParm dbName="custName" loadIDName="custName" />
+      <preprocessParm dbName="comDate" loadIDName="comDate" embedded=" " leading=" " trailing=" " format="%Y-%m-%d" />
+      <preprocessParm dbName="comGroup" loadIDName="comGroup" />
+      <preprocessParm dbName="comName" loadIDName="comName" />
+      <preprocessParm dbName="customStr" loadIDName="customStr" />
+      <preprocessParm dbName="customStr2" loadIDName="customStr2" />
+      <preprocessParm dbName="customDec" loadIDName="customDec" embedded=",." leading=" " trailing=" " divideBy="100" />
+      <indexParm >INDEXMODE=INTERNAL
+RESTYPE=ALL</indexParm>
+   </application>
+   <application name="QARdemoPDF-FTI" updateDate="11/28/22 13:56:44" updateUserid="ADMIN" aid="5025" appGroup="QARdemoFTI" identifier="PDF" dataType="PDF" indexer="PDF" dataCompression="Disable" size="100" pageIdentifiers="false" printAmount="All Pages" defaultPrinter="*NONE" expirationDate="Use AppGroup Value" usePreview="false" resourceComparison="50" >
+      <pdfData orientation="0" >
+      </pdfData>
+      <preprocessParm dbName="docUUID" loadIDName="docUUID" />
+      <preprocessParm dbName="custName" loadIDName="custName" />
+      <preprocessParm dbName="comDate" loadIDName="comDate" embedded=" " leading=" " trailing=" " format="%Y-%m-%d" />
+      <preprocessParm dbName="comGroup" loadIDName="comGroup" />
+      <preprocessParm dbName="comName" loadIDName="comName" />
+      <preprocessParm dbName="customStr" loadIDName="customStr" />
+      <preprocessParm dbName="customStr2" loadIDName="customStr2" />
+      <preprocessParm dbName="customDec" loadIDName="customDec" embedded=",." leading=" " trailing=" " divideBy="100" />
+      <preprocessParm dbName="fts" divideBy="1" />
+      <indexParm >INDEXMODE=INTERNAL
+RESTYPE=ALL</indexParm>
+   </application>
+   <application name="System Load - Log Document" description="System Load - Log document" updateDate="08/18/22 13:24:24" aid="5009" appGroup="System Load" identifier="1" dataType="Line" indexer="None" dataCompression="OD77LiteHW" largeObject="false" size="100" pageIdentifiers="false" printAmount="All Pages" defaultPrinter="*NONE" expirationDate="Use AppGroup Value" usePreview="false" >
+      <lineData codePage="1208" prMode="None" recFM="Stream" delimiter="0A" trc="No" CCType="None" >
+         <lvHeader pageHdrRows="4" fieldHdrRows="0" validationRow="4" validationCol="1" validationString="--------" />
+      </lineData>
+      <indexParm ></indexParm>
+   </application>
+   <application name="System Load - No Log Document" description="System Load - No log document" updateDate="08/18/22 13:24:24" aid="5008" appGroup="System Load" identifier="0" dataType="None" indexer="None" dataCompression="OD77LiteHW" size="100" pageIdentifiers="false" expirationDate="Use AppGroup Value" >
+      <indexParm ></indexParm>
+   </application>
+   <application name="System Log - N/A Document" description="System Log - Document not available" updateDate="08/18/22 13:24:23" aid="5002" appGroup="System Log" identifier="A" dataType="None" indexer="None" dataCompression="OD77LiteHW" size="100" pageIdentifiers="false" expirationDate="Use AppGroup Value" >
+      <indexParm ></indexParm>
+   </application>
+   <application name="System Log - No Document" description="System Log - No document" updateDate="08/18/22 13:24:23" aid="5003" appGroup="System Log" identifier="N" dataType="None" indexer="None" dataCompression="OD77LiteHW" size="100" pageIdentifiers="false" expirationDate="Use AppGroup Value" >
+      <indexParm ></indexParm>
+   </application>
+   <application name="System Log - Text Document" description="System Log - Textual document" updateDate="08/18/22 13:24:23" aid="5004" appGroup="System Log" identifier="T" dataType="Line" indexer="None" dataCompression="OD77LiteHW" largeObject="false" size="100" pageIdentifiers="false" printAmount="All Pages" defaultPrinter="*NONE" expirationDate="Use AppGroup Value" usePreview="false" >
+      <lineData codePage="1208" prMode="None" recFM="Stream" delimiter="0A" trc="No" CCType="None" >
+         <lvHeader pageHdrRows="4" fieldHdrRows="0" validationRow="4" validationCol="1" validationString="--------" />
+      </lineData>
+      <indexParm ></indexParm>
+   </application>
+   <folder name="Extracto" updateDate="11/21/22 06:29:37" updateUserid="ADMIN" fid="5022" searchType="Retrieve" displayDocLocation="false" displayDocHold="false" queryUnmappedFields="false" >
+      <applicationGroup name="Extracto" >
+         <mapping fieldName="AGE-WCAB2" dbName="AGEWCAB2" />
+         <mapping fieldName="CTA-WCAB2" dbName="CTAWCAB2" />
+         <mapping fieldName="DAC-WCAB2" dbName="DACWCAB2" />
+         <mapping fieldName="NOM-WCAB2" dbName="NOMWCAB2" />
+         <mapping fieldName="MES-WCAB2" dbName="MESWCAB2" />
+         <mapping fieldName="SEC-WCAB2" dbName="SECWCAB2" />
+         <mapping fieldName="ANO-WCAB2" dbName="ANOWCAB2" />
+         <mapping fieldName="PAG-WCAB2" dbName="PAGWCAB2" />
+         <application name="Extracto" />
+      </applicationGroup>
+      <field name="AGE-WCAB2" fieldType="String" mappingType="Single" />
+      <field name="CTA-WCAB2" fieldType="String" mappingType="Single" />
+      <field name="DAC-WCAB2" fieldType="String" mappingType="Single" />
+      <field name="NOM-WCAB2" fieldType="String" mappingType="Single" />
+      <field name="MES-WCAB2" fieldType="String" mappingType="Single" />
+      <field name="SEC-WCAB2" fieldType="String" mappingType="Single" />
+      <field name="ANO-WCAB2" fieldType="String" mappingType="Single" />
+      <field name="PAG-WCAB2" fieldType="String" mappingType="Single" />
+      <permission group="*PUBLIC" adminAuthority="false" accessAuthority="false" publicNQAuthority="false" privateNQAuthority="false" viewNQAuthority="false" secondaryFolder="false" maxHits="No Limit" fullReportBrowse="false" serverBasedSorting="false" >
+         <fieldInfo name="AGE-WCAB2" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="1" displayOrder="1" wildCard="Append" />
+         <fieldInfo name="CTA-WCAB2" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="2" displayOrder="2" wildCard="Append" />
+         <fieldInfo name="DAC-WCAB2" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="3" displayOrder="3" wildCard="Append" />
+         <fieldInfo name="NOM-WCAB2" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="4" displayOrder="4" wildCard="Append" />
+         <fieldInfo name="MES-WCAB2" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="5" displayOrder="5" wildCard="Append" />
+         <fieldInfo name="SEC-WCAB2" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="6" displayOrder="6" wildCard="Append" />
+         <fieldInfo name="ANO-WCAB2" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="7" displayOrder="7" wildCard="Append" />
+         <fieldInfo name="PAG-WCAB2" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="8" displayOrder="8" wildCard="Append" />
+      </permission>
+   </folder>
+   <folder name="QARdemo" updateDate="08/22/22 12:31:56" updateUserid="ADMIN" fid="5014" searchType="Retrieve" displayDocLocation="false" displayDocHold="false" queryUnmappedFields="false" >
+      <applicationGroup name="QARdemo" >
+         <mapping fieldName="Document UUID" dbName="docUUID" />
+         <mapping fieldName="Customer Name" dbName="custName" />
+         <mapping fieldName="Communication Date" dbName="comDate" />
+         <mapping fieldName="Communication Group" dbName="comGroup" />
+         <mapping fieldName="Communication Name" dbName="comName" />
+         <mapping fieldName="Custom String Index" dbName="customStr" />
+         <mapping fieldName="Custom String Index 2" dbName="customStr2" />
+         <mapping fieldName="Custom Decimal Index" dbName="customDec" />
+         <mapping fieldName="Document Type" dbName="docType" />
+         <application name="QARdemoPDF" />
+         <application name="QARdemoAFP" />
+         <application name="QARdemoHTML" />
+      </applicationGroup>
+      <field name="Document UUID" fieldType="String" mappingType="Single" />
+      <field name="Customer Name" fieldType="String" mappingType="Single" />
+      <field name="Communication Date" fieldType="Date (native)" mappingType="Single" />
+      <field name="Communication Group" fieldType="String" mappingType="Single" />
+      <field name="Communication Name" fieldType="String" mappingType="Single" />
+      <field name="Custom String Index" fieldType="String" mappingType="Single" />
+      <field name="Custom String Index 2" fieldType="String" mappingType="Single" />
+      <field name="Custom Decimal Index" fieldType="Decimal" mappingType="Single" />
+      <field name="Document Type" fieldType="String" mappingType="Single" />
+      <permission group="*PUBLIC" adminAuthority="false" accessAuthority="false" publicNQAuthority="false" privateNQAuthority="false" viewNQAuthority="false" secondaryFolder="false" maxHits="No Limit" fullReportBrowse="false" serverBasedSorting="false" >
+         <fieldInfo name="Document UUID" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="1" displayOrder="1" wildCard="Append" />
+         <fieldInfo name="Customer Name" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="2" displayOrder="2" wildCard="Append" />
+         <fieldInfo name="Communication Date" sortOrder="0" sortType="Ascending" between="Default" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" dateInterval="Last" dateIntLength="10" dateIntType="Years" dateDefaultFormat="%Y-%m-%d" dateDisplayFormat="%Y-%m-%d" required="false" fixed="false" internal="false" viewTitle="false" default="true" queryOrder="3" displayOrder="3" />
+         <fieldInfo name="Communication Group" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="4" displayOrder="4" wildCard="Append" />
+         <fieldInfo name="Communication Name" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="5" displayOrder="5" wildCard="Append" />
+         <fieldInfo name="Custom String Index" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="6" displayOrder="6" wildCard="Append" />
+         <fieldInfo name="Custom String Index 2" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="7" displayOrder="7" wildCard="Append" />
+         <fieldInfo name="Custom Decimal Index" sortOrder="0" sortType="Ascending" between="false" equal="Default" greaterThan="false" gtOrEqual="true" in="false" lessThan="false" like="false" ltOrEqual="true" notBetween="false" notEqual="false" notIn="false" notLike="false" decimalPrecision="2" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="8" displayOrder="8" />
+         <fieldInfo name="Document Type" sortOrder="0" sortType="Ascending" between="false" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="9" displayOrder="9" wildCard="Append" />
+      </permission>
+   </folder>
+   <folder name="QARdemoFTI" updateDate="09/09/22 16:08:00" updateUserid="ADMIN" fid="5018" searchType="Retrieve" displayDocLocation="false" displayDocHold="false" queryUnmappedFields="false" >
+      <field name="Document UUID" fieldType="String" mappingType="Single" />
+      <field name="Customer Name" fieldType="String" mappingType="Single" />
+      <field name="Communication Date" fieldType="Date (native)" mappingType="Single" />
+      <field name="Communication Group" fieldType="String" mappingType="Single" />
+      <field name="Communication Name" fieldType="String" mappingType="Single" />
+      <field name="Custom String Index" fieldType="String" mappingType="Single" />
+      <field name="Custom String Index 2" fieldType="String" mappingType="Single" />
+      <field name="Custom Decimal Index" fieldType="Decimal" mappingType="Single" />
+      <field name="Document Type" fieldType="String" mappingType="Single" />
+      <field name="Full Text Index Search" fieldType="FTI Search" mappingType="Single" />
+      <field name="Full Text Index Score" fieldType="FTI Score" mappingType="Single" />
+      <field name="Full Text Index Highlight" fieldType="FTI Highlight" mappingType="Single" />
+      <field name="Full Text Index Summary" fieldType="FTI Summary" mappingType="Single" />
+      <permission group="*PUBLIC" adminAuthority="false" accessAuthority="false" publicNQAuthority="false" privateNQAuthority="false" viewNQAuthority="false" secondaryFolder="false" maxHits="No Limit" fullReportBrowse="false" serverBasedSorting="false" >
+         <fieldInfo name="Document UUID" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="1" displayOrder="1" wildCard="Append" />
+         <fieldInfo name="Customer Name" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="2" displayOrder="2" wildCard="Append" />
+         <fieldInfo name="Communication Date" sortOrder="0" sortType="Ascending" between="Default" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" dateInterval="Last" dateIntLength="10" dateIntType="Years" dateDefaultFormat="%Y-%m-%d" dateDisplayFormat="%Y-%m-%d" required="false" fixed="false" internal="false" viewTitle="false" default="true" queryOrder="3" displayOrder="3" />
+         <fieldInfo name="Communication Group" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="4" displayOrder="4" wildCard="Append" />
+         <fieldInfo name="Communication Name" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="5" displayOrder="5" wildCard="Append" />
+         <fieldInfo name="Custom String Index" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="6" displayOrder="6" wildCard="Append" />
+         <fieldInfo name="Custom String Index 2" sortOrder="0" sortType="Ascending" between="false" equal="true" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="Default" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="7" displayOrder="7" wildCard="Append" />
+         <fieldInfo name="Custom Decimal Index" sortOrder="0" sortType="Ascending" between="false" equal="Default" greaterThan="false" gtOrEqual="true" in="false" lessThan="false" like="false" ltOrEqual="true" notBetween="false" notEqual="false" notIn="false" notLike="false" decimalPrecision="2" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="8" displayOrder="8" />
+         <fieldInfo name="Document Type" sortOrder="0" sortType="Ascending" between="false" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="9" displayOrder="9" wildCard="Append" />
+         <fieldInfo name="Full Text Index Search" between="false" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="10" />
+         <fieldInfo name="Full Text Index Score" between="false" equal="true" greaterThan="false" gtOrEqual="Default" in="false" lessThan="false" like="false" ltOrEqual="true" notBetween="false" notEqual="false" notIn="false" notLike="false" min="0.00" max="100.00" decimalPrecision="2" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="11" displayOrder="10" />
+         <fieldInfo name="Full Text Index Highlight" between="false" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" displayOrder="11" />
+         <fieldInfo name="Full Text Index Summary" between="false" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" displayOrder="12" />
+      </permission>
+   </folder>
+   <folder name="System Load" description="OnDemand System Load Facility" updateDate="08/18/22 13:24:24" fid="5010" searchType="Retrieve" displayDocLocation="false" displayDocHold="true" queryUnmappedFields="false" >
+      <applicationGroup name="System Load" >
+         <mapping fieldName="Load Time" dbName="load_time" />
+         <mapping fieldName="Application Group Name" dbName="applgrp_name" />
+         <mapping fieldName="Application Name" dbName="appl_name" />
+         <mapping fieldName="Load Id" dbName="load_id" />
+         <mapping fieldName="Total Elapsed Time (secs)" dbName="total_elapsed" />
+         <mapping fieldName="Index Elapsed Time (secs)" dbName="index_elapsed" />
+         <mapping fieldName="Row Count" dbName="total_docs" />
+         <mapping fieldName="Total Pages" dbName="total_pages" />
+         <mapping fieldName="Doc Comp Type" dbName="doc_comp_type" />
+         <mapping fieldName="Input Size" dbName="doc_input_size" />
+         <mapping fieldName="Output Size" dbName="doc_output_size" />
+         <mapping fieldName="Resource Reuse" dbName="res_type" />
+         <mapping fieldName="Resource Id" dbName="res_rid" />
+         <mapping fieldName="Res Comp Type" dbName="res_comp_type" />
+         <mapping fieldName="Res Input Size" dbName="res_input_size" />
+         <mapping fieldName="Res Output Size" dbName="res_output_size" />
+         <mapping fieldName="Agid" dbName="load_agid" />
+         <mapping fieldName="Aid" dbName="load_aid" />
+         <mapping fieldName="Load Name" dbName="load_name" />
+         <mapping fieldName="PriNid" dbName="load_pri_nid" />
+         <mapping fieldName="SecNid" dbName="load_sec_nid" />
+         <mapping fieldName="Start" dbName="load_start" />
+         <mapping fieldName="Stop" dbName="load_stop" />
+         <mapping fieldName="Doc Begin Date" dbName="doc_bgn_date" />
+         <mapping fieldName="Doc End Date" dbName="doc_end_date" />
+         <mapping fieldName="Index Type" dbName="index_type" />
+         <mapping fieldName="Log Document" dbName="appl_id" />
+         <mapping fieldName="Lockdown" dbName="lockdown" />
+         <mapping fieldName="CFS-CMOD" dbName="cfsod" />
+         <mapping fieldName="Input File Name" dbName="input_filename" />
+         <mapping fieldName="Document Date" dbName="doc_bgn_date" />
+         <mapping fieldName="Document Date" dbName="doc_end_date" />
+         <mapping fieldName="Start Date" dbName="load_start_dt" />
+         <mapping fieldName="Stop Date" dbName="load_stop_dt" />
+         <mapping fieldName="Input File Size" dbName="input_file_size" />
+         <application name="System Load - No Log Document" />
+         <application name="System Load - Log Document" />
+      </applicationGroup>
+      <field name="Load Time" description="Time when the load completed" fieldType="Date/Time (TZ) (native)" mappingType="Single" />
+      <field name="Application Group Name" description="Name of the application group" fieldType="String" mappingType="Single" />
+      <field name="Application Name" description="Name of the application" fieldType="String" mappingType="Single" />
+      <field name="Load Id" description="Load Identifier" fieldType="String" mappingType="Single" />
+      <field name="Total Elapsed Time (secs)" description="Total elapsed time, in seconds, for the load (including indexing)" fieldType="Decimal" mappingType="Single" />
+      <field name="Index Elapsed Time (secs)" description="Elapsed time, in seconds, to index the load" fieldType="Decimal" mappingType="Single" />
+      <field name="Row Count" description="Number of documents in the load" fieldType="Big Int" mappingType="Single" />
+      <field name="Total Pages" description="Number of pages in the load" fieldType="Big Int" mappingType="Single" />
+      <field name="Doc Comp Type" description="Type of document compression used for the load" fieldType="Small Int" mappingType="Single" />
+      <field name="Input Size" description="Input size of the load before compression" fieldType="Big Int" mappingType="Single" />
+      <field name="Output Size" description="Output size of the load after compression" fieldType="Big Int" mappingType="Single" />
+      <field name="Resource Reuse" description="Whether or not a resource was reused from a previous load" fieldType="Small Int" mappingType="Single" />
+      <field name="Resource Id" description="Resource Id used for the load" fieldType="Integer" mappingType="Single" />
+      <field name="Res Comp Type" description="Type of resource compression used for the load" fieldType="Small Int" mappingType="Single" />
+      <field name="Res Input Size" description="Input size of the resource for the load before compression" fieldType="Big Int" mappingType="Single" />
+      <field name="Res Output Size" description="Output size of the resource for the load after compression" fieldType="Big Int" mappingType="Single" />
+      <field name="Agid" description="The internal identifier of the application group" fieldType="Integer" mappingType="Single" />
+      <field name="Aid" description="The internal identifier of the application" fieldType="Integer" mappingType="Single" />
+      <field name="Load Name" description="Name of the load" fieldType="String" mappingType="Single" />
+      <field name="PriNid" description="Primary storage node identifier" fieldType="Integer" mappingType="Single" />
+      <field name="SecNid" description="Secondary storage node identifier" fieldType="Integer" mappingType="Single" />
+      <field name="Start" description="Internal start date of the load" fieldType="Big Int" mappingType="Single" />
+      <field name="Stop" description="Internal stop date of the load" fieldType="Big Int" mappingType="Single" />
+      <field name="Doc Begin Date" description="Beginning document date for the load" fieldType="Date (native)" mappingType="Single" />
+      <field name="Doc End Date" description="Ending document date for the load" fieldType="Date (native)" mappingType="Single" />
+      <field name="Index Type" description="Index Type for the load" fieldType="Small Int" mappingType="Single" />
+      <field name="Log Document" description="Whether or not a log document exists" fieldType="String" mappingType="Single" />
+      <field name="Lockdown" description="Lockdown counter" fieldType="Small Int" mappingType="Single" />
+      <field name="CFS-CMOD" description="CFS-OD counter" fieldType="Small Int" mappingType="Single" />
+      <field name="Input File Name" description="Input file name for the load" fieldType="String" mappingType="Single" />
+      <field name="Document Date" description="Document date (between beginning and ending loaded document dates)" fieldType="Date (native)" mappingType="Range" />
+      <field name="Start Date" description="Internal start date of the load" fieldType="Date/Time (native)" mappingType="Single" />
+      <field name="Stop Date" description="Internal stop date of the load" fieldType="Date/Time (native)" mappingType="Single" />
+      <field name="Input File Size" description="The original input file size" fieldType="Big Int" mappingType="Single" />
+      <permission group="*PUBLIC" adminAuthority="false" accessAuthority="false" publicNQAuthority="false" privateNQAuthority="false" viewNQAuthority="false" secondaryFolder="false" maxHits="No Limit" fullReportBrowse="false" serverBasedSorting="false" >
+         <fieldInfo name="Load Time" sortOrder="1" sortType="Descending" between="true" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" dateInterval="Last" dateIntLength="0" dateIntType="Days" dateDefaultFormat="%Y-%m-%d" dateDisplayFormat="%Y-%m-%d %H:%M:%S.%F" required="false" fixed="false" internal="false" viewTitle="true" default="true" queryOrder="8" displayOrder="1" />
+         <fieldInfo name="Application Group Name" sortOrder="0" sortType="Ascending" between="true" equal="true" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="Default" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="true" required="false" fixed="false" internal="false" viewTitle="true" default="false" queryOrder="1" displayOrder="2" wildCard="Append" />
+         <fieldInfo name="Application Name" sortOrder="0" sortType="Ascending" between="true" equal="true" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="Default" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="true" required="false" fixed="false" internal="false" viewTitle="true" default="false" queryOrder="2" displayOrder="3" wildCard="Append" />
+         <fieldInfo name="Load Id" sortOrder="0" sortType="Ascending" between="true" equal="true" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="Default" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="true" required="false" fixed="false" internal="false" viewTitle="true" default="false" queryOrder="3" displayOrder="4" wildCard="Append" />
+         <fieldInfo name="Total Elapsed Time (secs)" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" decimalPrecision="4" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="5" />
+         <fieldInfo name="Index Elapsed Time (secs)" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" decimalPrecision="4" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="6" />
+         <fieldInfo name="Row Count" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="7" />
+         <fieldInfo name="Total Pages" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="8" />
+         <fieldInfo name="Doc Comp Type" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="9" />
+         <fieldInfo name="Input Size" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="10" />
+         <fieldInfo name="Output Size" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="11" />
+         <fieldInfo name="Resource Reuse" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="12" />
+         <fieldInfo name="Resource Id" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="13" />
+         <fieldInfo name="Res Comp Type" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="14" />
+         <fieldInfo name="Res Input Size" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="15" />
+         <fieldInfo name="Res Output Size" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="16" />
+         <fieldInfo name="Agid" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="4" displayOrder="17" />
+         <fieldInfo name="Aid" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="18" />
+         <fieldInfo name="Load Name" sortOrder="0" sortType="Ascending" between="true" equal="true" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="Default" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="true" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="5" displayOrder="19" wildCard="Append" />
+         <fieldInfo name="PriNid" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="20" />
+         <fieldInfo name="SecNid" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="21" />
+         <fieldInfo name="Start" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="0" />
+         <fieldInfo name="Stop" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="0" />
+         <fieldInfo name="Doc Begin Date" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" dateInterval="Last" dateIntLength="0" dateIntType="Days" dateDefaultFormat="%Y-%m-%d" dateDisplayFormat="%Y-%m-%d" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="24" />
+         <fieldInfo name="Doc End Date" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" dateInterval="Last" dateIntLength="0" dateIntType="Days" dateDefaultFormat="%Y-%m-%d" dateDisplayFormat="%Y-%m-%d" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="25" />
+         <fieldInfo name="Index Type" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="26" />
+         <fieldInfo name="Log Document" sortOrder="0" sortType="Ascending" between="false" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="0" />
+         <fieldInfo name="Lockdown" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="27" />
+         <fieldInfo name="CFS-CMOD" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="28" />
+         <fieldInfo name="Input File Name" sortOrder="0" sortType="Ascending" between="true" equal="true" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="Default" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="true" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="6" displayOrder="30" wildCard="Append" />
+         <fieldInfo name="Document Date" sortOrder="0" sortType="Ascending" between="false" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" dateInterval="Last" dateIntLength="0" dateIntType="Days" dateDefaultFormat="%Y-%m-%d" dateDisplayFormat="%Y-%m-%d" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="7" displayOrder="0" />
+         <fieldInfo name="Start Date" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" dateInterval="Last" dateIntLength="0" dateIntType="Days" dateDefaultFormat="%Y-%m-%d" dateDisplayFormat="%Y-%m-%d %H:%M:%S" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="22" />
+         <fieldInfo name="Stop Date" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" dateInterval="Last" dateIntLength="0" dateIntType="Days" dateDefaultFormat="%Y-%m-%d" dateDisplayFormat="%Y-%m-%d %H:%M:%S" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="23" />
+         <fieldInfo name="Input File Size" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="0" displayOrder="29" />
+      </permission>
+   </folder>
+   <folder name="System Log" description="OnDemand System Log Facility" updateDate="08/18/22 13:24:23" fid="5005" searchType="Retrieve" displayDocLocation="false" displayDocHold="false" queryUnmappedFields="false" >
+      <applicationGroup name="System Log" >
+         <mapping fieldName="Time Stamp" dbName="time_stamp" />
+         <mapping fieldName="Userid" dbName="userid" />
+         <mapping fieldName="Severity" dbName="severity" />
+         <mapping fieldName="Msg Num" dbName="msg_num" />
+         <mapping fieldName="Message" dbName="msg_text" />
+         <mapping fieldName="View" dbName="appl_id" />
+         <mapping fieldName="Log Id" dbName="log_id" />
+         <mapping fieldName="Account" dbName="account" />
+         <application name="System Log - N/A Document" />
+         <application name="System Log - No Document" />
+         <application name="System Log - Text Document" />
+      </applicationGroup>
+      <field name="Time Stamp" description="Time of event" fieldType="Date/Time (TZ) (native)" mappingType="Single" />
+      <field name="Userid" description="User initiating the event" fieldType="String" mappingType="Single" />
+      <field name="Severity" description="Severity of the event" fieldType="String" mappingType="Single" />
+      <field name="Msg Num" description="The message number of the event" fieldType="Small Int" mappingType="Single" />
+      <field name="Message" description="The message text of the event" fieldType="String" mappingType="Single" />
+      <field name="View" description="The application view identifier" fieldType="String" mappingType="Single" />
+      <field name="Log Id" description="The identifier of the connection" fieldType="Integer" mappingType="Single" />
+      <field name="Account" description="The accounting record" fieldType="String" mappingType="Single" />
+      <permission group="*PUBLIC" adminAuthority="false" accessAuthority="false" publicNQAuthority="false" privateNQAuthority="false" viewNQAuthority="false" secondaryFolder="false" maxHits="No Limit" fullReportBrowse="false" serverBasedSorting="false" >
+         <fieldInfo name="Time Stamp" sortOrder="1" sortType="Descending" between="true" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" dateInterval="Last" dateIntLength="0" dateIntType="Days" dateDefaultFormat="%Y-%m-%d" dateDisplayFormat="%Y-%m-%d %H:%M:%S.%F" required="true" fixed="false" internal="false" viewTitle="true" default="true" queryOrder="8" displayOrder="1" />
+         <fieldInfo name="Userid" sortOrder="0" sortType="Ascending" between="true" equal="true" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="Default" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="true" required="false" fixed="false" internal="false" viewTitle="true" default="false" queryOrder="1" displayOrder="2" wildCard="Append" />
+         <fieldInfo name="Severity" sortOrder="0" sortType="Ascending" between="true" equal="true" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="Default" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="true" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="4" displayOrder="4" />
+         <fieldInfo name="Msg Num" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="6" displayOrder="6" />
+         <fieldInfo name="Message" sortOrder="0" sortType="Ascending" between="true" equal="true" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="Default" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="true" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="7" displayOrder="7" wildCard="Append" />
+         <fieldInfo name="View" sortOrder="0" sortType="Ascending" between="false" equal="Default" greaterThan="false" gtOrEqual="false" in="false" lessThan="false" like="false" ltOrEqual="false" notBetween="false" notEqual="false" notIn="false" notLike="false" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="5" displayOrder="5" />
+         <fieldInfo name="Log Id" sortOrder="0" sortType="Ascending" between="true" equal="Default" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="false" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="false" required="false" fixed="false" internal="false" viewTitle="true" default="false" queryOrder="3" displayOrder="3" />
+         <fieldInfo name="Account" sortOrder="0" sortType="Ascending" between="true" equal="true" greaterThan="true" gtOrEqual="true" in="true" lessThan="true" like="Default" ltOrEqual="true" notBetween="true" notEqual="true" notIn="true" notLike="true" required="false" fixed="false" internal="false" viewTitle="false" default="false" queryOrder="2" displayOrder="8" wildCard="Append" />
+      </permission>
+   </folder>
+</onDemand>

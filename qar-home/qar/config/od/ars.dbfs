@@ -1,0 +1,45 @@
+#
+#       ars.dbfs - OnDemand Database Filesystems Configuration File
+#
+#  5622-662 (C) COPYRIGHT IBM CORPORATION 1995
+#  All Rights Reserved
+#  Licensed Materials - Property of IBM
+#
+#  US Government Users Restricted Rights - Use, duplication or
+#  disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+#
+#  This program sample is provided on an as-is basis.
+#  The licensee of the OnDemand product is free to copy, revise,
+#  modify, and make derivative works of this program sample
+#  as they see fit.
+#
+#  This file defines the filesystems to use for creating the tablespaces in
+#  which the tables will be created.
+#
+# Tablespace Types:
+#   - See the OnDemand and DB2/Oracle documentation for specifics about
+#     tablespaces
+#
+#         SMS - System Managed Space
+#
+#  NOTE:  OnDemand Application Groups define which tablespace type
+#         to use (if any).  If tablespaces are not used, then the
+#         OnDemand Application Group(s) will store data in the:
+#              DB2 - USERSPACE1 tablespace
+#              Oracle - default tablespace for OnDemand/Oracle userid
+#
+# File Format:
+#	1) Comments must begin with a # in the first column
+#       2) Blank lines are ignored.
+#	3) Put space/tab after filesystem name and before tablespace type.
+#
+#
+# EXAMPLE:
+# Filesystem                        Tablespace Type (SMS)
+# --------------------------------------------------------------
+#/arsdb/SMS				SMS
+#
+#
+# DEFINITIONS:
+# Filesystem                        Tablespace Type (SMS)
+# --------------------------------------------------------------
