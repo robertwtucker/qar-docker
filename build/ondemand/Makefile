@@ -3,6 +3,8 @@ include ../make/Makefile
 REGISTRY_HOST=registry.sptcloud.com
 USERNAME=spt
 
+DOCKER_BUILD_ARGS=--build-arg INSTALL_FILES_URL=${INSTALL_FILES_URL}
+
 pre-build:
 	mkdir -p od
 	cp -f ../../http-server/files/od/od-response.file od
