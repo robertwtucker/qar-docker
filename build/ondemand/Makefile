@@ -1,7 +1,7 @@
 include ../make/Makefile
 
 REGISTRY_HOST=registry.sptcloud.com
-USERNAME=spt
+USERNAME=qar
 
 DOCKER_BUILD_ARGS=--build-arg INSTALL_FILES_URL=${INSTALL_FILES_URL}
 
