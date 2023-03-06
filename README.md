@@ -36,8 +36,8 @@ Copyright (c) 2023 Quadient Group AG and distributed under the MIT License.
 See `LICENSE` for more information. Some components are included under the
 terms of their respective licenses.
 
-[Generic Docker Makefile](https://github.com/mvanholsteijn/docker-makefile)
-[Oracle Docker Images](https://github.com/oracle/docker-images)
+* [Generic Docker Makefile](https://github.com/mvanholsteijn/docker-makefile)
+* [Oracle Docker Images](https://github.com/oracle/docker-images)
 
 ## Contact
 
