@@ -2,7 +2,7 @@
 #  - Full Text Search server
 #
 # Base image
-FROM registry.access.redhat.com/ubi8/ubi:latest
+FROM registry.access.redhat.com/ubi8/ubi:8.7-1112
 
 # Labels
 LABEL "provider"="Quadient Group AG" \

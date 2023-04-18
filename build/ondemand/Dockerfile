@@ -5,7 +5,7 @@
 #    https://www.ibm.com/support/pages/system/files/inline-files/Content%20Manager%20OnDemand%20Docker%202022-06-30.pdf
 #
 # Base image
-FROM registry.access.redhat.com/ubi8/ubi:latest
+FROM registry.access.redhat.com/ubi8/ubi:8.7-1112
 
 # Labels
 LABEL "provider"="Quadient Group AG"      \
