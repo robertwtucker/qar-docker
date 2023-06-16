@@ -47,7 +47,7 @@ start_exporter() {
     -odPassword "${OD_PASSWORD}" \
     -odInstallDir "${OD_HOME}" \
     -pollDelay "${ARS_FTI_EXPORT_POLL_DELAY}" \
-    -ftiToken $(cat "${QAR_HOME}"/tmp/fts.token)
+    -ftiToken "$(cat "${QAR_HOME}"/tmp/fts.token)"
 
   # Invoke export
   "${OD_HOME}"/jre/bin/java \
