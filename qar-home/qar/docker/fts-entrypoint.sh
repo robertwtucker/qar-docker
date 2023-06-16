@@ -21,7 +21,8 @@ stop() {
 
 start_exporter() {
   # Build classpath
-  for file in $(ls -d "${OD_HOME}"/jars/*); do
+  for file in "${OD_HOME}"/jars/*; do
+    [ -e "${file}" ] || continue
     OD_JARS="${OD_JARS:-./}":"${file}"
   done
 
@@ -57,7 +58,7 @@ start_exporter() {
     -configFile "${QAR_HOME}"/tmp/fti.config &
 
   FTI_PID="${!}"
-  mkdir -p /tmp/qar/run && echo "${FTI_PID}" > /tmp/qar/run/fti.pid
+  mkdir -p /tmp/qar/run && echo "${FTI_PID}" >/tmp/qar/run/fti.pid
 }
 
 # --
