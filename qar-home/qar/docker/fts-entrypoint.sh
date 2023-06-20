@@ -100,11 +100,31 @@ sed -i "s|__ARS.INI#SRVR_INSTANCE_OWNER__|${RUNTIME_USER}|" "${OD_CONFIG}"/ars.i
 sed -i "s|__ARS.INI#SRVR_OD_STASH__|${OD_STASH_FILE}|" "${OD_CONFIG}"/ars.ini
 
 if [ "${1^^}" = "INIT" ]; then
-  "${ODFTS_HOME}"/bin/configTool.sh printToken -configPath "${ODFTS_HOME}"/config |
-    sed -n 2p >"${QAR_HOME}"/tmp/fts.token
-  echo "Wrote FTS token to ${QAR_HOME}/tmp/fts.token"
+  echo "Starting FTS initialization"
+
+  # Generate the FTS token
+  echo "Generating FTS token..."
+  TOKEN=$("${ODFTS_HOME}"/bin/configTool.sh printToken -configPath "${ODFTS_HOME}"/config | sed -n 2p)
+  echo "${TOKEN}" >"${QAR_HOME}/tmp/fts.token"
+  echo "Wrote token to ${QAR_HOME}/tmp/fts.token"
+
+  # Store the PTS token in the ConfigMap
+  echo "Patching configuration with token value..."
+  SERVICE_ACCOUNT="/var/run/secrets/kubernetes.io/serviceaccount"
+  NAMESPACE=$(cat "${SERVICE_ACCOUNT}/namespace")
+  curl -sS \
+    -H "Authorization: Bearer $(cat ${SERVICE_ACCOUNT}/token)" \
+    -H "Content-Type: application/json-patch+json" \
+    --cacert "${SERVICE_ACCOUNT}/ca.crt" \
+    --request PATCH \
+    --data "[{\"op\":\"replace\",\"path\":\"/data\",\"value\":{\"token\":\"${TOKEN}\"}}]" \
+    "https://${KUBERNETES_SERVICE_HOST}/api/v1/namespaces/${NAMESPACE}/configmaps/qar-fts"
+
+  echo "FTS initialization complete"
 else
   if [ "${1^^}" = "START" ]; then
+    echo "Starting FTS"
+
     # Start the FTI server
     "${ODFTS_HOME}"/bin/startup.sh
 

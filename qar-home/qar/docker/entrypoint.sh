@@ -36,7 +36,7 @@ startLoad() {
     -d "${ARSLOAD_DIRECTORY}" \
     -u "${ARSLOAD_USER}" \
     -p "${OD_STASH_FILE}" &
-#    -c /opt/qar/tmp \
+  #    -c /opt/qar/tmp \
   OD_PID="${!}"
 }
 
@@ -105,11 +105,11 @@ if [ -n "${ZOOKEEPER_SERVER_LIST}" ]; then
   sed -i "s|#ARS_LOCK_HOSTS=|ARS_LOCK_HOSTS=${ZOOKEEPER_SERVER_LIST}|" "${OD_CONFIG}"/ars.cfg
 fi
 
-FTS_TOKEN="${QAR_HOME}"/tmp/fts.token
-if [ -e "${FTS_TOKEN}" ]; then
+FTS_TOKEN_FILE="${QAR_HOME}"/config/fti/fts.token
+if [ -e "${FTS_TOKEN_FILE}" ]; then
   echo "Full-text indexing is enabled"
   ARS_SUPPORT_FULL_TEXT_INDEX=1
-  ARS_FULL_TEXT_INDEX_TOKEN=$(cat "${FTS_TOKEN}")
+  ARS_FULL_TEXT_INDEX_TOKEN=$(cat "${FTS_TOKEN_FILE}")
 fi
 sed -i "s|__ARS.CFG#ARS_SUPPORT_FULL_TEXT_INDEX__|${ARS_SUPPORT_FULL_TEXT_INDEX}|" "${OD_CONFIG}"/ars.cfg
 sed -i "s|__ARS.CFG#ARS_FULL_TEXT_INDEX_TOKEN__|${ARS_FULL_TEXT_INDEX_TOKEN}|" "${OD_CONFIG}"/ars.cfg
