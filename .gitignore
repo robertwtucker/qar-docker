@@ -8,3 +8,4 @@ build/ondemand-restapi/qar-home.tar
 build/oracledb/dockerfiles/21.3.0/LINUX.X64_213000_db_home.zip
 http-server/files/
 qar-home/qar-home.tar
+qar-home/qar/.version
