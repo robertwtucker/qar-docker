@@ -113,14 +113,15 @@ if [ "${1^^}" = "INIT" ]; then
   SERVICE_ACCOUNT="/var/run/secrets/kubernetes.io/serviceaccount"
   NAMESPACE=$(cat "${SERVICE_ACCOUNT}/namespace")
   curl -sS \
+    -X PATCH \
     -H "Authorization: Bearer $(cat ${SERVICE_ACCOUNT}/token)" \
+    -H "Accept: application/json" \
     -H "Content-Type: application/json-patch+json" \
     --cacert "${SERVICE_ACCOUNT}/ca.crt" \
-    --request PATCH \
     --data "[{\"op\":\"replace\",\"path\":\"/data\",\"value\":{\"token\":\"${TOKEN}\"}}]" \
-    "https://${KUBERNETES_SERVICE_HOST}/api/v1/namespaces/${NAMESPACE}/configmaps/qar-fts"
+    "https://${KUBERNETES_SERVICE_HOST}/api/v1/namespaces/${NAMESPACE}/configmaps/${CONFIG_NAME}"
 
-  echo "FTS initialization complete"
+  echo -e "\nFTS initialization complete"
 else
   if [ "${1^^}" = "START" ]; then
     echo "Starting FTS"
