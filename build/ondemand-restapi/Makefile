@@ -3,7 +3,7 @@ include ../make/Makefile
 REGISTRY_HOST=registry.sptcloud.com
 USERNAME=qar
 
-IMAGE_BASE=liberty-23.0.0.2
+IMAGE_BASE=liberty-23.0.0.5
 DOCKER_BUILD_ARGS=--build-arg INSTALL_FILES_URL=${INSTALL_FILES_URL}
 
 pre-build:
