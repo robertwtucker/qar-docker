@@ -10,6 +10,7 @@ pre-build:
 	mkdir -p od
 	cp -f ../../http-server/files/od/od-response.file od
 	cp -f ../../http-server/files/od/odpdf-response.file od
+	../../qar-home/create-tarball.sh
 	cp -f ../../qar-home/qar-home.tar .
 
 post-build:
