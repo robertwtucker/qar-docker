@@ -3,7 +3,7 @@
 This repository contains
 [Dockerfiles](https://docs.docker.com/engine/reference/builder/) and samples to
 build [Docker](https://www.docker.com/resources/what-container/) images for
-[Quadient Archive and Retrieval](https://www.quadient.com/en/resources/quadient-archive-and-retrieval-brochure) 
+[Quadient Archive and Retrieval](https://www.quadient.com/en/resources/quadient-archive-and-retrieval-brochure)
 (QAR) and related products.
 
 ## Building Docker images with this repository
