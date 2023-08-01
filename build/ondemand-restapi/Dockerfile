@@ -2,7 +2,7 @@
 #  - REST API provider
 #
 # Base image
-FROM ibmcom/websphere-liberty:23.0.0.5-full-java11-openj9-ubi
+FROM icr.io/appcafe/websphere-liberty:23.0.0.7-full-java11-openj9-ubi
 
 # Labels
 LABEL "provider"="Quadient Group AG"                    \
